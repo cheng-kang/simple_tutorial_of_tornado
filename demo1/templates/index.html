@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>B06 Innovation Space</title>
+		<link rel="stylesheet" type="text/css" href="{{ static_url("css/style.css") }}">
+		<script type="text/javascript">
+            window.setInterval(function() {
+                go_to();
+            },
+            100);
+            function go_to() {
+            	if( document.getElementById("myArticle").style.height < (document.getElementById("myArticle").scrollHeight - 4 ) + "px")
+            		document.getElementById("myArticle").style.height = document.getElementById("myArticle").scrollHeight + "px";
+            }
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<img class="logo" src="{{ static_url("img/logo.png") }}">
+			<div class="container">
+				<h1>欢迎访问B06创新实验室的博客</h1>
+				<div class="content">
+				<form method="post">
+					<p>文章标题：</p>
+					<input type="text" class="Title" name="title" placeholder="在这里输入你的标题" />
+					<p>文章正文：</p>
+					<textarea type="text" class="Article" id="myArticle" name="content" placeholder="在这里输入你的正文"></textarea>
+					<br/>
+					<input type="submit" class="Article Button Submit" value="发    布"/>
+				</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page_title }}</title>
+		<link rel="stylesheet" type="text/css" href="{{ static_url("css/style.css") }}">
+	</head>
+	<body>
+		<div class="main">
+			<img class="logo" src="{{ static_url("img/logo.png") }}">
+			<div class="container">
+				<h1>欢迎访问B06创新实验室的博客</h1>
+				<div class="content">
+					<div class="Title">
+						<p>
+							{{ blog['title'] }}
+							<span class="Time">{{ locale.format_date(blog['date'], relative=False) }}</span>
+						</p>
+					</div>
+					<div class="Article">
+						<p>
+							{{ blog['content'] }}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
