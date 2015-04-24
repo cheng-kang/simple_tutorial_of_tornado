@@ -1,0 +1,103 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family:Square721 BT,微软雅黑;
+	color: #00561C;
+	background: url("../img/bg.jpg");
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+	color: #00561C;
+}
+.main{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 40px 20px 40px;
+	width: 1000px;
+	height: 100%;
+	
+}
+
+.logo{
+	height:40px;
+	float：left;
+}
+
+.container h1{
+	text-align: center;
+	margin:0 0 10px 0; 
+}
+.content{
+	margin: 20px auto 20px auto;
+	padding:8px 125px 8px 125px;
+	border:3px solid #00561C;
+	border-radius:25px;
+	width:750px;
+}
+.Title{
+	text-align: center;
+	font-family:Square721 BT,微软雅黑;
+	font-size: 20px;
+	font-weight:900;
+	color: #00561C;
+}
+.Article{
+	text-align: left;
+	font-family:Square721 BT,微软雅黑;
+	font-size: 20px;
+	color: #00561C;
+}
+input.Title{
+	width:750px;
+	height:23px;
+	border:solid #00561C;
+	border-width:0 0 0 0;
+	outline:none;
+	background-color:transparent;
+}
+
+textarea.Article{
+	width:750px;
+	height:300px;
+	border:0px;
+	outline:none;
+	background-color:transparent;
+}
+.buttonDiv{
+	width: 450px;
+	height: 50px;
+	margin:0 auto;
+}
+.Button.Article{
+	width:150px;
+	height:40px;
+	display:block;
+	/* margin: 10px auto 0 auto; */
+	text-align: center;
+	border:1px solid #00561C;
+	border-radius:8px;
+	background-color:transparent;
+}
+
+.Button.Article:hover{
+	background-color:#00561C;
+	color: #fff;
+}
+ .Submit.Button.Article{
+	margin: 10px auto 0px auto;
+} 
+.Edit.Button.Article{
+	margin: 10px 30px 0px 30px;
+	float: left;
+}
+.Delete.Button.Article{
+	margin: 10px 30px 0px 30px;
+	float: left;
+	clear:right;
+}
+span.Time{
+	margin-left:250px; 
+	font-size: 15px;
+}

@@ -1,0 +1,42 @@
+{% autoescape None %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page_title }}</title>
+		<link rel="stylesheet" type="text/css" href="{{ static_url("css/style.css") }}">
+	</head>
+	<body>
+		<div class="main">
+			<a href="/">
+				<img class="logo" src="{{ static_url("img/logo.png") }}">
+			</a>
+			<div class="container">
+				<h1>欢迎访问B06创新实验室的博客</h1>
+				<div class="content">
+					<div class="Title">
+						<p>
+							{{ blog['title'] }}
+						</p>
+						<p>
+							<span class="Time">{{ time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(blog['date']) ) }}</span>
+						</p>
+					</div>
+					<div class="Article">
+						<p>
+							{{ blog['content'] }}
+						</p>
+					</div>
+					<div class="buttonDiv">
+						<a href="/edit/{{ int(blog['id']) }}">
+							<input type="button" class="Article Button Edit" value="编    辑"/>
+						</a>
+						<a href="/delete/{{ int(blog['id']) }}">
+							<input type="button" class="Article Button Delete" value="删    除"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
